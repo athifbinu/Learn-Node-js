@@ -82,11 +82,13 @@ http.createServer(function(req,res){
         res.writeHead(200,{'content-type':'text/html'})    //200 is a http code
         res.write(data)
         res.end();
+        
 
     })
   
 
 }).listen(7000) 
+
 
 
 
