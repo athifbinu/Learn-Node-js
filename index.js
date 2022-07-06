@@ -196,11 +196,23 @@
 
 //    npm
 
-const cl=require('cli-color');
-const uc=require('upper-case');
-console.log(cl.yellow('Heloo Athif you are a billionare'));
+// const cl=require('cli-color');
+// const uc=require('upper-case');
+// console.log(cl.yellow('Heloo Athif you are a billionare'));
 
-console.log(uc.upperCase('hello would'));
+// console.log(uc.upperCase('hello would'));
+
+
+       //os modules
+
+       const  os=require('os');
+
+
+       console.log(os.type());
+       
+
+
+
 
 
 
