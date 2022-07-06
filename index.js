@@ -160,32 +160,49 @@
 
 
 
-const http=require("http");
+// const http=require("http");
 
-const fs=require('fs');
+// const fs=require('fs');
 
-http.createServer(function(req,res){
-       if(req.url==='/'){
-              fs.readFile('testing.html',function(err,hai){
-                     res.writeHead(200,{'content-type':'text/html'})
-                     res.write(hai)
-                     res.end()
+// http.createServer(function(req,res){
+//        if(req.url==='/'){                    //the / it means only to check the hosting .
+//               fs.readFile('testing.html',function(err,hai){
+//                      res.writeHead(200,{'content-type':'text/html'})
+//                      res.write(hai)
+//                      res.end()
 
-              })
-       }else if(req.url==='/loging'){
-              res.write('loging')
-              res.end()
-       }else{
-              res.writeHead('404')
-              res.write('error')
-              res.end()
+//               })
+       
 
-       }
+//        }else if(req.url==='/hacked'){
+//               res.write('You are hacked')
+//               res.end()
+              
+
+//        }else if(req.url==='/welcome'){
+//               res.write('Welcome to the Real would') 
+//               res.end()              
+//                                                      // res.writeHead('404')
+//                                                      // res.write('error')
+
+//        }
 
    
 
-}).listen(7000,()=>console.log("server started")
-)
+// }).listen(7000,()=>console.log("server started")
+// )
+
+
+
+//    npm
+
+const cl=require('cli-color');
+const uc=require('upper-case');
+console.log(cl.yellow('Heloo Athif you are a billionare'));
+
+console.log(uc.upperCase('hello would'));
+
+
 
 
 
