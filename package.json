@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "upper-case": "^2.0.2"
+  },
+  "devDependencies": {
+    "alert-message": "^0.1.24"
   }
 }
