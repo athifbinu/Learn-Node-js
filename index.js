@@ -205,11 +205,95 @@
 
        //os modules
 
-       const  os=require('os');
+       // const  os=require('os');
 
 
-       console.log(os.type());
+       // console.log(os.userInfo());
+
+       // fs
+
+    //how to create a file using fs
+
+//     fs=require('fs');
+
+//     fs.writeFile(
+//        'test.html',
+//        'Create a file',
+//        (err)=> {
+//            if(err){
+//               console.log("error")
+//            }
+//            console.log("file created")
+//        }
+//     )
+
+
+ //rename file
+
+//  fs.rename("./test.html","./sample.html",(err)=>{
+//        if(err) {
+//               console.log(err);
+//        }
+//        console.log("file changed")
+//  })
+
+
+       //deleat file
+
+// fs.unlink("./test.html",(err)=>{
+//        if(err) {
+//               console.log(err);
+//        }
+//        console.log("file is Deleted")
+// })
+
+      //to find pathe using pathe modules
+
+// const path=require("path");
+
+// const p="/home/LERN/NODEJS/testing.html";
+// console.log(path.parse(p));
+
+// const http=require("http");
+
+// http.createServer(function(req,res){
+//        res.write("hello athif")
+//        res.end();          //normel server
+
        
+// }).listen(7000,()=>console.log("server started"));
+
+//express server 
+
+
+const express=require("express");
+const path=require("path");
+
+const testing=express();
+
+// testing.get('/',function(req,res){
+//        res.send('Hello athif')
+// })
+
+testing.get('/',function(req,res){
+       res.sendFile(path.join(__dirname,'tesiting.html'));
+})
+
+
+
+testing.get("/hello",function(req,res){
+       res.send('Ypu are billionare')
+})
+
+
+
+testing.listen(3000,function(){
+       console.log('server started');
+})
+
+
+
+
 
 
 
