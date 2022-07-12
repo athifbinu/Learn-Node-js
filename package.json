@@ -1,19 +1,16 @@
 {
   "name": "learn-nodejs",
-  "version": "1.0.0",
-  "description": "nothig",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "cli-color": "^2.0.3",
-    "express": "^4.18.1",
-    "upper-case": "^2.0.2"
-  },
-  "devDependencies": {
-    "alert-message": "^0.1.24"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }

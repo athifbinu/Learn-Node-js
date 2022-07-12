@@ -1,6 +1,6 @@
-// module.exports.hello=function(){
-//     console.log("module testing server is passed")
-// }
+module.exports.hello=function(){
+    console.log("module testing server is passed")
+}
 
 
 

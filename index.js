@@ -212,6 +212,7 @@
 
        // fs
 
+
     //how to create a file using fs
 
 //     fs=require('fs');
@@ -266,33 +267,72 @@
 //express server 
 
 
-const express=require("express");
-const path=require("path");
+// const express=require("express");
+// const path=require("path");
 
-const testing=express();
+// const testing=express();
 
 // testing.get('/',function(req,res){
 //        res.send('Hello athif')
 // })
 
-testing.get('/',function(req,res){
-       res.sendFile(path.join(__dirname,'tesiting.html'));
+// testing.get('/',function(req,res){
+//        res.sendFile(path.join(__dirname,'testing.html'));
+// })
+// testing.get('/yes',function(req,res){
+//        res.send('Mission success');
+// })
+
+// testing.get("/hello",function(req,res){
+//        res.send('Ypu are billionare')
+// })
+
+
+
+
+
+
+// testing.listen(3000,function(){
+//        console.log('server started');
+// })
+
+
+
+const express=require('express');
+
+const path=require('path');
+
+
+
+const test=express();   
+
+
+
+
+
+
+test.get('/',function(req,res){             //get method
+       res.sendFile(path.join(__dirname,'testing.html'));
+
+      
+})
+
+test.post('/testing',function(req,res){                  //push method
+       res.sendFile(path.join(__dirname,'index.html'));    
+})
+
+test.get("/hello",function(req,res){
+       res.send("Sever success All  the best");
 })
 
 
 
-testing.get("/hello",function(req,res){
-       res.send('Ypu are billionare')
-})
 
 
-
-testing.listen(3000,function(){
+test.listen(2000,function(){
        console.log('server started');
+
 })
-
-
-
 
 
 
